@@ -1,11 +1,12 @@
 [
+   
     { "page":"home",
         "labels": [
-            { "key": "welcome", "value":"Bienvenue à"},
-            { "key": "moreInfo","value":"Pour en savoir plus sur nous, choisir un sujet"},
-            { "key": "becomeCustomer", "value":"Devenir un client"},
-            { "key": "services", "value":"Services"},
-            { "key": "jobs", "value":"Offres d'emploi"},
+            { "key": "welcome", "value":"Welkom bij"},
+            { "key": "moreInfo","value":"Om meer over ons te weten te komen, kies een onderwerp"},
+            { "key": "becomeCustomer", "value":"Klant worden"},
+            { "key": "services", "value":"Diensten"},
+            { "key": "jobs", "value":"Jobs"},
             { "key": "contact", "value":"Contact"},
             { "key": "archie", "value":"Archie"}]
     },

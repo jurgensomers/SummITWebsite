@@ -10,9 +10,8 @@ export class Globals {
 
 @Injectable()
 export class TranslationService {
- 
-
-  constructor( public http:Http, public globals:Globals ) { 
+   
+  constructor( public http:Http, private globals:Globals ) { 
   }
 
   getAll(){    
@@ -51,8 +50,7 @@ export class TranslationService {
 
   get(pageAndKey:String){
     if(pageAndKey === null || pageAndKey == undefined ) return "#translationKey#";
-   
-    console.log('get translation : ' + pageAndKey);
+    
     var page = pageAndKey.split('.')[0];
     var key = pageAndKey.split('.')[1];
 
@@ -60,6 +58,8 @@ export class TranslationService {
 
     return this.getKey(page, key);
   }
+
+
 
   setLanguage(language:string){
     this.globals.currentLanguage = language;
@@ -69,7 +69,7 @@ export class TranslationService {
 
 } 
 
-interface TranslatedPage {
+export interface TranslatedPage {
   page:String,
   labels:TranslatedValue[]
 }
