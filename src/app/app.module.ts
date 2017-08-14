@@ -7,10 +7,12 @@ import { AppComponent } from './app.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { JobsComponent } from './components/jobs/jobs.component';
 import { CustomerComponent } from './components/customer/customer.component';
-import { ServiceComponent } from './components/service/service.component';
-import { TranslateDirective } from './directives/translate.directive';
+import { ServiceComponent } from './components/service/service.component'; 
 import { HomeComponent } from './components/home/home.component'; 
-import { TranslationService, Globals } from './services/translation.service'; 
+import { TranslationService } from './services/translation.service';
+import { TranslatePipe } from './pipes/translate.pipe'; 
+import { TRANSLATION_PROVIDERS }   from './translations';
+
 
 
 
@@ -49,16 +51,17 @@ const appRoutes: Routes = [
     ContactComponent,
     JobsComponent,
     CustomerComponent,
-    ServiceComponent,
-    TranslateDirective,
-    HomeComponent
+    ServiceComponent, 
+    HomeComponent,
+    TranslatePipe
   ],
   imports: [
     BrowserModule,
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [TranslationService, Globals] ,
+  providers: [TranslationService, TRANSLATION_PROVIDERS] ,
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+  

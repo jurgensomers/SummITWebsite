@@ -10,38 +10,38 @@
             { "key": "contact", "value":"Contact"},
             { "key": "archie", "value":"Archie"}]
     },
-    {
+    { 
         "page":"contact",
         "labels":[
             { "key": "heading1", "value":"Contact"},
-            { "key": "heading1Text","value":"You can contact us by :"},
+            { "key": "heading1Text","value":"U kan ons contacteren via  :"},
             { "key": "email", "value":"E-mail :"},
-            { "key": "phone", "value":"Phone : "}
+            { "key": "phone", "value":"Telefoon : "}
         ]
     },
-    {
+    {    
         "page":"customer",
         "labels": [
-            {"key":"heading1", "value":"Become a client?"},
-            {"key":"heading1Text1", "value":"Our service is focused on delivering quality at the defined deadlines"},
-            {"key":"heading1Text2", "value":"For us, it is very important that your investment in custom software pays off in the future."},
-            {"key":"heading1Text3", "value":"We understand that for most of the companies, IT is a very high cost."},
-            {"key":"heading1Text4", "value":"But imagine that your processess are more streamlined?"},
-            {"key":"heading1Text5", "value":"Then it means a profit for you, because you can spent more time for the core tasks of your enterprise."},
-            {"key":"heading2", "value":"Why chose our services?"},
-            {"key":"heading2Text1", "value":"There are already a lot of players on the market."},
-            {"key":"heading2Text2", "value":"But our company can be proud on the knowledge and experience we can offer."},
-            {"key":"heading2Text3", "value":"For you, it is important that the required services remain within budget,"},
-            {"key":"heading2Text4", "value":"and off course, the delivered product must last for a while."},
-            {"key":"heading2Text5", "value":"With all our developments, we keep this factors in mind"} 
+            {"key":"heading1", "value":"Klant worden?"},
+            {"key":"heading1Text1", "value":"Onze dienstverlening is erop gericht om kwaliteit af te leveren tegen de vooropgestelde deadlines"},
+            {"key":"heading1Text2", "value":"Het is voor ons zeer belangrijk dat uw investering in software op termijn dan ook loont."},
+            {"key":"heading1Text3", "value":"Wij begrijpen maar al te goed dat IT voor de meeste bedrijven een kostenpost is."},
+            {"key":"heading1Text4", "value":"Maar stel u voor dat uw processen simpeler en gestroomlijnder werken?"},
+            {"key":"heading1Text5", "value":"Dan betekent dit voor u een opbrengst, en u kan meer tijd spenderen aan de kerntaken van uw onderneming."},
+            {"key":"heading2", "value":"Waarom onze dienstverlening kiezen?"},
+            {"key":"heading2Text1", "value":"Toch mag ons bedrijf trots zijn op de kennis en ervaring die wij u kunnen bieden."},
+            {"key":"heading2Text2", "value":"Toch mag ons bedrijf trots zijn op de kennis en ervaring die wij u kunnen bieden."},
+            {"key":"heading2Text3", "value":"Voor u is het natuurlijk belangrijk dat de gevraagde diensten binnen uw budget blijft,"},
+            {"key":"heading2Text4", "value":"en natuurlijk het opgeleverde product voor enige tijd kan meegaan."},
+            {"key":"heading2Text5", "value":"Bij onze ontwikkelingen houden wij met deze factoren dan ook rekening"} 
         ]
     },
     {
         "page":"jobs",
         "labels":[
                 {"key":"heading1", "value":"Jobs"},
-                {"key":"heading1Text1","value":"We are always looking for IT-profiles : .NET, java, web, ASP.NET, Android, IoS, architects, ..."},
-                {"key":"heading1Text2", "value": "You can always sent your resume to :"} 
+                {"key":"heading1Text1","value":"Wij zijn altijd op zoek naar IT-profielen : .NET, java, web, ASP.NET, Android, IoS, architecten,  ..."},
+                {"key":"heading1Text2", "value": "U kan uw cv opsturen naar :"} 
         ]
     },
     {

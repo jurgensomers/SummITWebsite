@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TranslationService} from './services/translation.service';
 
@@ -8,18 +8,33 @@ import { TranslationService} from './services/translation.service';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {
-  title = 'Summ-IT';
-  private ts:TranslationService;
-  language:string;
+export class AppComponent implements OnInit {
+  title = 'Summ-IT'; 
+  public supportedLanguages: any[];
 
-  setLanguage(language:string){
-    console.log('language changed to ' + language);
-    this.ts.setLanguage(language);
+  
+  constructor(private _translate:TranslationService){ 
   }
 
-  constructor(private translationService:TranslationService){
-    this.ts = translationService;
-    this.language="EN";
+  isCurrentLang(lang: string) {
+    // check if the selected lang is current lang
+    return lang === this._translate.currentLang;
   }
+
+  setLanguage(lang: string) {
+      // set current lang;
+      this._translate.use(lang); 
+  } 
+   
+  ngOnInit() {
+    // standing data
+    this.supportedLanguages = [
+    { display: 'English', value: 'en' },
+    { display: 'Nederlands', value: 'nl' },
+    { display: 'русский', value: 'ру'}
+    ];
+
+    // set current langage
+    this.setLanguage('en');
+}
 }

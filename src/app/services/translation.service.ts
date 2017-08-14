@@ -1,81 +1,39 @@
-import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
-import 'rxjs/add/operator/map';
-
- @Injectable()
-export class Globals { 
-  currentLanguage:string = "en";
-  translations:TranslatedPage[] = null;
-}
+import { Injectable, Inject } from '@angular/core'; 
+import { TRANSLATIONS } from '../translations';
+ 
 
 @Injectable()
 export class TranslationService {
-   
-  constructor( public http:Http, private globals:Globals ) { 
+   private currentLanguage:string;
+
+   public get currentLang() {
+    return this.currentLanguage;
+
   }
 
-  getAll(){    
-    console.log('get translations for language ' + this.globals.currentLanguage);
-    if(this.globals.currentLanguage == null || this.globals.currentLanguage == undefined) {
-      console.log('default language set to en');
-      this.globals.currentLanguage = "en";
+  // inject our translations
+  constructor(@Inject(TRANSLATIONS) private _translations: any) {
+  }
+
+  public use(lang: string): void {
+      // set current language
+      console.log('language changed to ' + lang);
+      this.currentLanguage = lang;
+  }
+
+  private translate(key: string): string {
+    // private perform translation
+    let translation = key;
+    console.log('translate ' + key);
+    if (this._translations[this.currentLanguage] && this._translations[this.currentLanguage][key]) {
+        return this._translations[this.currentLanguage][key];
     }
-      
-    return this.http.get('../assets/resources/labels.' + this.globals.currentLanguage + '.json')
-      .map(res => res.json());
-  } 
 
-  getKey(page:String, key:string){
-    if(this.globals.translations === null || this.globals.translations == undefined){
-      console.log('loading pages...');
-      this.getAll().subscribe (pages => {
-          this.globals.translations = pages;
-          this.getKey(page,key);
-          console.log('pages loaded');
-      });
-    }
-    else{
-      var pageResult = this.globals.translations.filter(x => x.page == page);
-      if(pageResult != null && pageResult != undefined && pageResult.length > 0) {
-        var keyResult = pageResult[0].labels.filter(x => x.key == key);
-        if(keyResult != null && keyResult != undefined && keyResult.length > 0 ) {
-          console.log('page ' + page + ' and key ' + key + ' : ' + keyResult[0].key + '/' + keyResult[0].value) 
-          return keyResult[0].value;
-        }
-      }
-      
-      return '#page.key#';
-    }
+    return translation;
   }
 
-  get(pageAndKey:String){
-    if(pageAndKey === null || pageAndKey == undefined ) return "#translationKey#";
-    
-    var page = pageAndKey.split('.')[0];
-    var key = pageAndKey.split('.')[1];
-
-    console.log('get translation : page is ' + page + ' and key is ' + key);
-
-    return this.getKey(page, key);
+  public instant(key: string) {
+      // call translation
+      return this.translate(key); 
   }
-
-
-
-  setLanguage(language:string){
-    this.globals.currentLanguage = language;
-    console.log('language changed');
-  }
-
-
 } 
-
-export interface TranslatedPage {
-  page:String,
-  labels:TranslatedValue[]
-}
-
-interface TranslatedValue {
-      key:string;
-      value:string
-  }
- 
