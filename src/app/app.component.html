@@ -1,0 +1,32 @@
+<nav class="navbar  navbar-default navbar-static-top" >
+        <div class="container-fluid" style="height:100px">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavBar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><img src="assets/images/logo.png" style="width:164px;height:72px" /></a>
+
+            </div>
+
+            <div class="collapse navbar-collapse " id="myNavBar">
+                <ul class="nav navbar-nav pull-right">
+                    <li><a ui-sref="main" class="nav-link-main">Home</a></li>
+                    <li><a ui-sref="contact" class="nav-link-main">Contact</a></li>
+                    <li ng-controller="menuController">
+                        <a href="#" class="dropdown-toggle nav-link-main" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{language}}<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="nav-link-main" ng-click="setLanguage('nl')">NL</a></li>
+                            <li><a href="#" class="nav-link-main" ng-click="setLanguage('en')">EN</a></li>
+                            <li><a href="#" class="nav-link-main" ng-click="setLanguage('fr')">FR</a></li>
+                            <li><a href="#" class="nav-link-main" ng-click="setLanguage('de')">DE</a></li>
+                            <li><a href="#" class="nav-link-main" ng-click="setLanguage('ru')">RU</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <router-outlet></router-outlet>

@@ -1,0 +1,9 @@
+﻿[
+    { "key": "welcome", "value":"Welkom bij"},
+    { "key": "moreInfo","value":"Om meer over ons te weten te komen, kies een onderwerp"},
+    { "key": "becomeCustomer", "value":"Klant worden"},
+    { "key": "services", "value":"Diensten"},
+    { "key": "jobs", "value":"Jobs"},
+    { "key": "contact", "value":"Contact"},
+    { "key": "archie", "value":"Archie"}
+]

@@ -1,0 +1,67 @@
+[
+    { "page":"home",
+        "labels": [
+            { "key": "welcome", "value":"Welcome at"},
+            { "key": "moreInfo","value":"To find out more about us, chose a topic below"},
+            { "key": "becomeCustomer", "value":"Become a client"},
+            { "key": "services", "value":"Services"},
+            { "key": "jobs", "value":"Jobs"},
+            { "key": "contact", "value":"Contact"},
+            { "key": "archie", "value":"Archie"}]
+    }, 
+    {
+        "page":"contact",
+        "labels":[
+            { "key": "heading1", "value":"Contact"},
+            { "key": "heading1Text","value":"You can contact us by :"},
+            { "key": "email", "value":"E-mail :"},
+            { "key": "phone", "value":"Phone : "}
+        ]
+    },
+    {
+        "page":"customer",
+        "labels": [
+            {"key":"heading1", "value":"Become a client?"},
+            {"key":"heading1Text1", "value":"Our service is focused on delivering quality at the defined deadlines"},
+            {"key":"heading1Text2", "value":"For us, it is very important that your investment in custom software pays off in the future."},
+            {"key":"heading1Text3", "value":"We understand that for most of the companies, IT is a very high cost."},
+            {"key":"heading1Text4", "value":"But imagine that your processess are more streamlined?"},
+            {"key":"heading1Text5", "value":"Then it means a profit for you, because you can spent more time for the core tasks of your enterprise."},
+            {"key":"heading2", "value":"Why chose our services?"},
+            {"key":"heading2Text1", "value":"There are already a lot of players on the market."},
+            {"key":"heading2Text2", "value":"But our company can be proud on the knowledge and experience we can offer."},
+            {"key":"heading2Text3", "value":"For you, it is important that the required services remain within budget,"},
+            {"key":"heading2Text4", "value":"and off course, the delivered product must last for a while."},
+            {"key":"heading2Text5", "value":"With all our developments, we keep this factors in mind"} 
+        ]
+    },
+    {
+        "page":"jobs",
+        "labels":[
+                {"key":"heading1", "value":"Jobs"},
+                {"key":"heading1Text1","value":"We are always looking for IT-profiles : .NET, java, web, ASP.NET, Android, IoS, architects, ..."},
+                {"key":"heading1Text2", "value": "You can always sent your resume to :"} 
+        ]
+    },
+    {
+        "page":"services",
+        "labels" : [
+                {"key":"heading1" , "value": "Our services?"},
+                {"key":"heading1Text1", "value": "Our services are focused on quality and cover the requirements for business that need support in their IT-department."},
+                {"key":"heading1Text2", "value": "To accomplish this, we can rely on years of experience in different domains and business sectors"},
+                {"key":"heading2", "value": "Software on demand"},
+                {"key":"heading2Text1", "value": "One of our core services is to create custom software for your business that fits your needs."},
+                {"key":"heading2Text2", "value": "This can go from giving support to an existing team, or to manage complete projects ourself"},
+                {"key":"heading3", "value": "You need a specialist?"},
+                {"key":"heading3Text1", "value": "Maybe your business already has an IT-department, but you are on a very close deadline and the delivery is in danger?"},
+                {"key":"heading3Text2", "value": "Or your team has not the inhouse knowledge needed?"},
+                {"key":"heading3Text3", "value": "Don't worry, we will solve this for you"},
+                {"key":"heading3Text4", "value": "We will send you a specialist that can manage the problems or needs"},
+                {"key": "heading4", "value": "Knowledge domains"},
+                {"key":"heading4Text1", "value": "Our main developments are based on Microsoft technologies."},
+                {"key":"heading4Text2", "value": "We work mainly within the .NET environment"},
+                {"key": "presentationText", "value": "To know more about us, download the presentation"}
+        ]
+    }
+    
+]

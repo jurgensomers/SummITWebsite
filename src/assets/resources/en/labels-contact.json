@@ -1,0 +1,6 @@
+﻿[
+    { "key": "heading1", "value":"Contact"},
+    { "key": "heading1Text","value":"You can contact us by :"},
+    { "key": "email", "value":"E-mail :"},
+    { "key": "phone", "value":"Phone : "}
+]

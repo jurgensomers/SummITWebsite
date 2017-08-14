@@ -1,0 +1,9 @@
+﻿[
+    { "key": "welcome", "value":"Добро пожаловать"},
+    { "key": "moreInfo","value":"Чтобы узнать больше о нас, выберите тему"},
+    { "key": "becomeCustomer", "value":"Стать клиентом"},
+    { "key": "services", "value":"услуги"},
+    { "key": "jobs", "value":"работы"},
+    { "key": "contact", "value":"контакт"},
+    { "key": "archie", "value":"Archie"}
+]

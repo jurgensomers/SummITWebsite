@@ -1,0 +1,9 @@
+﻿[
+    { "key": "welcome", "value":"Bienvenue à"},
+    { "key": "moreInfo","value":"Pour en savoir plus sur nous, choisir un sujet"},
+    { "key": "becomeCustomer", "value":"Devenir un client"},
+    { "key": "services", "value":"Services"},
+    { "key": "jobs", "value":"Offres d'emploi"},
+    { "key": "contact", "value":"Contact"},
+    { "key": "archie", "value":"Archie"}
+]

@@ -1,0 +1,6 @@
+﻿[
+    { "key": "heading1", "value":"Berührung"},
+    { "key": "heading1Text","value":"Sie können uns per :"},
+    { "key": "email", "value":"Электронная почта :"},
+    { "key": "phone", "value":"Telefon : "}
+]
