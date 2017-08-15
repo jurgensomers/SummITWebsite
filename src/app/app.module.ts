@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpModule } from '@angular/http';
+import { CollapseModule } from 'ngx-bootstrap';
 
 import { AppComponent } from './app.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -9,12 +10,7 @@ import { JobsComponent } from './components/jobs/jobs.component';
 import { CustomerComponent } from './components/customer/customer.component';
 import { ServiceComponent } from './components/service/service.component'; 
 import { HomeComponent } from './components/home/home.component'; 
-import { TranslationService } from './services/translation.service';
-import { TranslatePipe } from './pipes/translate.pipe'; 
-import { TRANSLATION_PROVIDERS }   from './translations';
-
-
-
+import { TRANSLATION_PROVIDERS, TranslatePipe, TranslateService }   from './translate';
 
 
 const appRoutes: Routes = [
@@ -58,9 +54,10 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    CollapseModule.forRoot()
   ],
-  providers: [TranslationService, TRANSLATION_PROVIDERS] ,
+  providers: [TranslateService, TRANSLATION_PROVIDERS] ,
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TranslationService} from './services/translation.service';
+import { TranslateService} from './translate/translate.service';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
   public supportedLanguages: any[];
 
   
-  constructor(private _translate:TranslationService){ 
+  constructor(private _translate:TranslateService){ 
   }
 
   isCurrentLang(lang: string) {

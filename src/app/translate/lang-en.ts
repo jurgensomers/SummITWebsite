@@ -2,7 +2,12 @@ import { OpaqueToken } from '@angular/core';
 
 export const LANG_EN_NAME = 'en'; 
 
-export const LANG_EN_TRANS = {
+export const LANG_EN_TRANS = { 
+    'menu.home' : 'Home',
+    'menu.services': 'Services',
+    'menu.jobs': 'Jobs',
+    'menu.contact': 'Contact',
+
     'contact.heading1' : 'Contact',
     'contact.heading1Text' : 'You can contact us by :',
     'contact.email' : 'E-mail :',

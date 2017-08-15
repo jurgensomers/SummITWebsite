@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.panel-main {
+    border-color:#356F18;
+    color:#356F18;
+}
+
+.nav-link-main{
+    color:#356F18;
+}
+

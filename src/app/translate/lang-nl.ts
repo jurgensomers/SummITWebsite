@@ -3,6 +3,11 @@ import { OpaqueToken } from '@angular/core';
 export const LANG_NL_NAME = 'nl'; 
 
 export const LANG_NL_TRANS = {
+    'menu.home' : 'Home',
+    "menu.services": "Diensten",
+    "menu.jobs": "Jobs",
+    "menu.contact": "Contact",
+
     "contact.heading1": "Contact",
     "contact.heading1Text1": "U kan ons contacteren via :",
     "contact.email": "E-mail : ",

@@ -1,9 +1,9 @@
 import { Injectable, Inject } from '@angular/core'; 
-import { TRANSLATIONS } from '../translations';
+import { TRANSLATIONS } from './translations';
  
 
 @Injectable()
-export class TranslationService {
+export class TranslateService {
    private currentLanguage:string;
 
    public get currentLang() {
@@ -16,15 +16,15 @@ export class TranslationService {
   }
 
   public use(lang: string): void {
-      // set current language
-      console.log('language changed to ' + lang);
+      // set current language  
       this.currentLanguage = lang;
+      console.log('language : ' + this.currentLanguage);
   }
 
   private translate(key: string): string {
     // private perform translation
-    let translation = key;
-    console.log('translate ' + key);
+    console.log('language (translate) : ' + this.currentLanguage);
+    let translation = key; 
     if (this._translations[this.currentLanguage] && this._translations[this.currentLanguage][key]) {
         return this._translations[this.currentLanguage][key];
     }

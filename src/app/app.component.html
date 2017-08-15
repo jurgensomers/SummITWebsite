@@ -1,4 +1,4 @@
-<nav class="navbar  navbar-default navbar-static-top" >
+<nav class="navbar  navbar-default navbar-static-top navbar-toggleable-sm navbar-dark bg-faded" dropdowntoggle >
         <div class="container-fluid" style="height:100px">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavBar" aria-expanded="false">
@@ -7,25 +7,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"><img src="assets/images/logo.png" style="width:164px;height:72px" /></a>
-
+                <a class="navbar-brand" routerLink="/" routerLinkActive="active" href="#"><img src="assets/images/logo.png" style="width:164px;height:72px" /></a> 
             </div>
 
             <div class="collapse navbar-collapse " id="myNavBar">
                 <ul class="nav navbar-nav pull-right">
-                    <li><a href="/" class="nav-link-main">Home</a></li>
-                    <li><a href="/contact" class="nav-link-main">Contact</a></li>
-                    <li>
-                        <a href="#" class="dropdown-toggle nav-link-main" data-toggle="dropdown" role="button" aria-haspopup="true" 
-                        aria-expanded="false">{{language}}<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#" class="nav-link-main" ng-click="setLanguage('nl')">NL</a></li>
-                            <li><a href="#" class="nav-link-main" ng-click="setLanguage('en')">EN</a></li>
-                            <li><a href="#" class="nav-link-main" ng-click="setLanguage('fr')">FR</a></li>
-                            <li><a href="#" class="nav-link-main" ng-click="setLanguage('de')">DE</a></li>
-                            <li><a href="#" class="nav-link-main" ng-click="setLanguage('ru')">RU</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="#" routerLink="/" routerLinkActive="active" class="nav-link-main">{{ 'menu.home' | translate }}</a></li>
+                    <li><a href="#" routerLink="/contact" routerLinkActive="active" class="nav-link-main">{{ 'menu.contact' | translate }}</a></li>
+                    <li><a href="#" routerLink="/service" routerLinkActive="active" class="nav-link-main">{{ 'menu.services' | translate }}</a></li>
+                    <li><a href="#" routerLink="/jobs" routerLinkActive="active" class="nav-link-main">{{ 'menu.jobs' | translate }}</a></li>
+                     
+                      <li><a href="#"  class="nav-link-main" (click)="setLanguage('nl')">NL</a></li>
+                      <li><a href="#"  class="nav-link-main" (click)="setLanguage('en')">EN</a></li>
+                     <!-- <li><a  class="nav-link-main" (click)="setLanguage('fr')">FR</a></li>-->
+                    <!--  <li><a  class="nav-link-main" (click)="setLanguage('de')">DE</a></li>-->
+                      <li><a href="#"  class="nav-link-main" (click)="setLanguage('ru')">RU</a></li>
+
                 </ul>
             </div>
         </div>
