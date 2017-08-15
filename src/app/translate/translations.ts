@@ -6,7 +6,7 @@ import { LANG_RU_NAME, LANG_RU_TRANS } from './lang-ru';
 
 export const TRANSLATIONS = new OpaqueToken('translations');
 
-const dictionary = {
+export const dictionary = {
     [LANG_EN_NAME] : LANG_EN_TRANS,
     [LANG_NL_NAME] : LANG_NL_TRANS,
     [LANG_RU_NAME] : LANG_RU_TRANS

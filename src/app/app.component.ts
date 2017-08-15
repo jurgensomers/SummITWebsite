@@ -11,7 +11,7 @@ import { TranslateService} from './translate/translate.service';
 export class AppComponent implements OnInit {
   title = 'Summ-IT'; 
   public supportedLanguages: any[];
-
+  public currentLanguage:string;
   
   constructor(private _translate:TranslateService){ 
   }
@@ -24,6 +24,7 @@ export class AppComponent implements OnInit {
   setLanguage(lang: string) {
       // set current lang;
       this._translate.use(lang); 
+      this.currentLanguage = lang;
   } 
    
   ngOnInit() {

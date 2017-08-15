@@ -1,7 +1,7 @@
-<nav class="navbar  navbar-default navbar-static-top navbar-toggleable-sm navbar-dark bg-faded" dropdowntoggle >
+<nav class="navbar  navbar-default navbar-static-top" dropdowntoggle >
         <div class="container-fluid" style="height:100px">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavBar" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" ng-init="isCollapsed = true" ng-click="isCollapsed = !isCollapsed" data-toggle="collapse" data-target="#myNavBar" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -10,18 +10,26 @@
                 <a class="navbar-brand" routerLink="/" routerLinkActive="active" href="#"><img src="assets/images/logo.png" style="width:164px;height:72px" /></a> 
             </div>
 
-            <div class="collapse navbar-collapse " id="myNavBar">
+            <div class="collapse navbar-collapse in"  id="myNavBar">
                 <ul class="nav navbar-nav pull-right">
                     <li><a href="#" routerLink="/" routerLinkActive="active" class="nav-link-main">{{ 'menu.home' | translate }}</a></li>
                     <li><a href="#" routerLink="/contact" routerLinkActive="active" class="nav-link-main">{{ 'menu.contact' | translate }}</a></li>
                     <li><a href="#" routerLink="/service" routerLinkActive="active" class="nav-link-main">{{ 'menu.services' | translate }}</a></li>
                     <li><a href="#" routerLink="/jobs" routerLinkActive="active" class="nav-link-main">{{ 'menu.jobs' | translate }}</a></li>
-                     
-                      <li><a href="#"  class="nav-link-main" (click)="setLanguage('nl')">NL</a></li>
+                    <li>
+                        <a  class="dropdown-toggle nav-link-main" data-toggle="dropdown" role="button" aria-haspopup="true"
+                         aria-expanded="false">{{currentLanguage}}<span class="caret"></span></a>
+                            <ul class="dropdown-menu" dropdowntoggle>
+                                <li><a href="#"  class="nav-link-main" (click)="setLanguage('nl')">NL</a></li>
+                                <li><a href="#"  class="nav-link-main" (click)="setLanguage('en')">EN</a></li>
+                                <li><a href="#"  class="nav-link-main" (click)="setLanguage('ru')">RU</a></li>
+                            </ul>
+                        </li>
+                     <!--   <li><a href="#"  class="nav-link-main" (click)="setLanguage('nl')">NL</a></li>
                       <li><a href="#"  class="nav-link-main" (click)="setLanguage('en')">EN</a></li>
-                     <!-- <li><a  class="nav-link-main" (click)="setLanguage('fr')">FR</a></li>-->
-                    <!--  <li><a  class="nav-link-main" (click)="setLanguage('de')">DE</a></li>-->
-                      <li><a href="#"  class="nav-link-main" (click)="setLanguage('ru')">RU</a></li>
+                    <li><a  class="nav-link-main" (click)="setLanguage('fr')">FR</a></li>-->
+                    <!--  <li><a  class="nav-link-main" (click)="setLanguage('de')">DE</a></li
+                      <li><a href="#"  class="nav-link-main" (click)="setLanguage('ru')">RU</a></li>>-->
 
                 </ul>
             </div>
