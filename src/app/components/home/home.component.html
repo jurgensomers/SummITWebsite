@@ -19,7 +19,7 @@
             <div class="panel-body ">
                 <h1 style="text-align:center">
                     <a routerLink="/service" routerLinkActive="active" style="text-align:center">
-                        <img src="./assets/images/service.png" style="text-align:center" width="128" height="128"/>
+                        <img  [@grow]='stateService' (mouseover)="animate('service')" (mouseleave)="animate('service')" src="./assets/images/service.png" style="text-align:center" width="128" height="128"/>
                     </a>
                 </h1>
             </div>
@@ -32,7 +32,7 @@
             <div class="panel-body ">
                 <h1 style="text-align:center">
                     <a routerLink="/customer" routerLinkActive="active" style="text-align:center">
-                        <img src="./assets/images/customer.png" style="text-align:center" width="128" height="128"/>
+                        <img [@grow]='stateCustomers' (mouseover)="animate('customers')" (mouseleave)="animate('customers')" src="./assets/images/customer.png" style="text-align:center" width="128" height="128"/>
                     </a>
                 </h1>
             </div>
@@ -45,7 +45,7 @@
             <div class="panel-body ">
                 <h1 style="text-align:center">
                     <a routerLink="/jobs" routerLinkActive="active" style="text-align:center">
-                        <img src="./assets/images/job.png" style="text-align:center" width="128" height="128"/>
+                        <img [@grow]='stateJobs' (mouseover)="animate('jobs')" (mouseleave)="animate('jobs')" src="./assets/images/job.png" style="text-align:center" width="128" height="128"/>
                     </a>
                 </h1>
             </div>
@@ -58,13 +58,13 @@
             <div class="panel-body ">
                 <h1 style="text-align:center">
                     <a routerLink="/contact" routerLinkActive="active" style="text-align:center">
-                        <img src="./assets/images/contact.png" style="text-align:center" width="128" height="128"/>
+                        <img [@grow]='stateContact' (mouseover)="animate('contact')" (mouseleave)="animate('contact')" src="./assets/images/contact.png" style="text-align:center" width="128" height="128"/>
                     </a>
                 </h1>
             </div>
         </div>
     </div>
-    <div class="col-sm-2">
+   <!-- <div class="col-sm-2">
         <div class="panel panel-main">
             <div class="panel-heading"><h3 style="text-align:center">
                     {{ 'home.archie' | translate }}</h3></div>
@@ -76,5 +76,5 @@
                 </h1>
             </div>
         </div>
-    </div>
+    </div>-->
 </div>

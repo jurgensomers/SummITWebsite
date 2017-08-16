@@ -1,18 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { trigger,state,style,transition,animate,keyframes } from '@angular/animations';
 import { TranslateService} from './translate/translate.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  
 })
 
 export class AppComponent implements OnInit {
   title = 'Summ-IT'; 
   public supportedLanguages: any[];
   public currentLanguage:string;
-  
+  public isMainCollapsed:boolean;
+  public isBottomCollapsed:boolean;
+
   constructor(private _translate:TranslateService){ 
   }
 
@@ -32,10 +36,21 @@ export class AppComponent implements OnInit {
     this.supportedLanguages = [
     { display: 'English', value: 'en' },
     { display: 'Nederlands', value: 'nl' },
-    { display: 'русский', value: 'ру'}
+    { display: 'русский', value: 'ru'}
     ];
 
     // set current langage
     this.setLanguage('en');
-}
+    this.isBottomCollapsed = true;
+    this.isMainCollapsed = true;
+  }
+
+  toggleMainCollapse(){
+    this.isMainCollapsed = !this.isMainCollapsed;
+  }
+
+  toggleBottomCollapse(){
+    this.isBottomCollapsed = !this.isBottomCollapsed;
+  }
+
 }

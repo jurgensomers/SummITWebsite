@@ -22,7 +22,8 @@ export class TranslateService {
   }
 
   private translate(key: string): string {
-    // private perform translation 
+    // private perform translation
+    console.log('language (translate) : ' + this.currentLanguage);
     let translation = key; 
     if (this._translations[this.currentLanguage] && this._translations[this.currentLanguage][key]) {
         return this._translations[this.currentLanguage][key];

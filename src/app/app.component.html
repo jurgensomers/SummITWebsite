@@ -1,21 +1,27 @@
-<nav class="navbar navbar-default navbar-fixed-top"  >
+<nav class="navbar navbar-default"  >
         <div class="container" style="height:100px">
             <div class="navbar-header">
-                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main"
+                [ngClass]="{'collapsed': isMainCollapsed}"
+                (click)="toggleMainCollapse()"
+                aria-controls="#navbar-main" aria-expanded="false">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                <a class="navbar-brand" routerLink="/" routerLinkActive="active" href="#"><img src="assets/images/logo.png" style="width:164px;height:72px" /></a> 
+                <a class="navbar-brand" routerLink="/" routerLinkActive="active" href="#"><img src="assets/images/logo.png" 
+                    style="width:164px;height:72px" /></a> 
             </div>
 
-            <div class="collapse navbar-collapse collapse" id="navbar-main">
+            <div class="collapse navbar-collapse navbar-toggleable-xs" id="#navbar-main"
+            data-toggle="collapse" data-target="#navbar-main"
+            [ngClass]="{'in': !isMainCollapsed}">
                 <ul class="nav navbar-nav pull-right">
                     <li><a href="#" routerLink="/" routerLinkActive="active" class="nav-link-main">{{ 'menu.home' | translate }}</a></li>
                     <li><a href="#" routerLink="/contact" routerLinkActive="active" class="nav-link-main">{{ 'menu.contact' | translate }}</a></li>
                     <li><a href="#" routerLink="/service" routerLinkActive="active" class="nav-link-main">{{ 'menu.services' | translate }}</a></li>
                     <li><a href="#" routerLink="/jobs" routerLinkActive="active" class="nav-link-main">{{ 'menu.jobs' | translate }}</a></li>
-                    <li>
+                  <!--  <li>
                         <a class="dropdown-toggle nav-link-main" id="languages" data-toggle="dropdown"  role="button"
                             aria-haspopup="true"
                             aria-controls="languageMenu"
@@ -25,9 +31,30 @@
                             <li><a href="#"  class="nav-link-main" (click)="setLanguage('en')">EN</a></li>
                             <li><a href="#"  class="nav-link-main" (click)="setLanguage('ru')">RU</a></li>
                         </ul> 
-                    </li>
+                    </li>-->
                 </ul>
             </div>
         </div>
     </nav>
     <router-outlet></router-outlet>
+    <nav class="navbar navbar-default navbar-fixed-bottom navbar-inverse">
+            <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-bottom"
+                    [ngClass]="{'collapsed': isBottomCollapsed}"
+                    (click)="toggleBottomCollapse()">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button> 
+                </div>
+        <div class="navbar-header navbar-collapse collapse pull-right" 
+        [ngClass]="{'in': !isBottomCollapsed}"
+        id="navbar-bottom">   
+            <ul class="nav navbar-nav ">
+                <li *ngFor="let l of supportedLanguages"><a role="button" class="nav-link-main"  (click)="setLanguage(l.value)">{{ l.display}}</a> </li>
+              <!--  <li><a href="#"  class="nav-link-main" (click)="setLanguage('nl')">NL</a></li>
+                <li><a href="#"  class="nav-link-main" (click)="setLanguage('en')">EN</a></li>
+                <li><a href="#"  class="nav-link-main" (click)="setLanguage('ru')">RU</a></li>     -->
+            </ul>
+        </div>
+    </nav>
