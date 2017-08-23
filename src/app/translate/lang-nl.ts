@@ -65,5 +65,17 @@ export const LANG_NL_TRANS = {
     
     "archie.pageTitle" : "Archie",
 
-    "octane.pageTitle" : "Octane"
+    "octane.pageTitle" : "Octane",
+    "octane.introduction" : "Octane is een .NET bibliotheek dat basis functionaliteiten voorziet om applicaties te ontwikkelen",
+    "octane.data" : "Data",
+    "octane.data.content" : "Het data pakket bevat basis functionaliteiten voor data toegang",
+    "octane.di" : "Dependency injection",
+    "octane.localization" : "Localization",
+    "octane.mvvm" : "Model-View-Viewmodel",
+    "octane.service" : "WCF service",
+    "octane.serviceAgent" : "Service agents",
+    "octane.specification" : "Specification pattern",
+    "octane.test" : "Unit testen",
+    "octane.validation" : "Validatie",
+    "octance.wpf" : "WPF"
 }

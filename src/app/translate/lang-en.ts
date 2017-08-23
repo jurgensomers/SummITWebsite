@@ -64,5 +64,17 @@ export const LANG_EN_TRANS = {
 
     "archie.pageTitle" : "Archie",
 
-    "octane.pageTitle" : "Octane"
+    "octane.pageTitle" : "Octane",
+    "octane.introduction" : "Octane is a .NET library that provides base functionalities to build applications",
+    "octane.data" : "Data",
+    "octane.data.content" : "The data package contains base functionalities for data-access.",
+    "octane.di" : "Dependency injection",
+    "octane.localization" : "Localization",
+    "octane.mvvm" : "Model-View-Viewmodel",
+    "octane.service" : "WCF service",
+    "octane.serviceAgent" : "Service agents",
+    "octane.specification" : "Specification pattern",
+    "octane.test" : "Unit testing",
+    "octane.validation" : "Validation",
+    "octance.wpf" : "WPF"
 }
