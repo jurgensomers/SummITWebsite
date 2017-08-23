@@ -19,7 +19,7 @@ export const LANG_EN_TRANS = {
     'home.services': 'Services',
     'home.jobs': 'Jobs',
     'home.contact': 'Contact',
-    'home.archie': 'Archie',
+    'home.products': 'Products',
 
     'customer.heading1': 'Become a client?',
     'customer.heading1Text1': 'Our service is focused on delivering quality at the defined deadlines',
@@ -52,5 +52,17 @@ export const LANG_EN_TRANS = {
     "services.heading4": "Knowledge domains",
     "services.heading4Text1": "Our main developments are based on Microsoft technologies.",
     "services.heading4Text2": "We work mainly within the .NET environment",
-    "services.presentationText": "To know more about us, download the presentation"
+    "services.presentationText": "To know more about us, download the presentation",
+
+    "products.heading1" : "Products",
+    "products.archie" : "Archie",
+    "products.archieContent": "Archie is a software package that allows companies and organisations to master their data",
+    "products.octane" : "Octane",
+    "products.octaneContent": "Octane is a .NET library that allows developers to fast create applications using standard patterns and tools",
+    "products.discoverArchie" : "Discover Archie",
+    "products.discoverOctane" : "Discover Octane",
+
+    "archie.pageTitle" : "Archie",
+
+    "octane.pageTitle" : "Octane"
 }

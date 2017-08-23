@@ -9,9 +9,13 @@ import { AppComponent } from './app.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { JobsComponent } from './components/jobs/jobs.component';
 import { CustomerComponent } from './components/customer/customer.component';
-import { ServiceComponent } from './components/service/service.component'; 
+import { ServiceComponent } from './components/service/service.component';
+import { ProductsComponent } from './components/products/products.component'; 
 import { HomeComponent } from './components/home/home.component'; 
-import { TRANSLATION_PROVIDERS, TranslatePipe, TranslateService }   from './translate'; 
+import { TRANSLATION_PROVIDERS, TranslatePipe, TranslateService }   from './translate';
+import { ArchieComponent } from './components/archie/archie.component';
+import { OctaneComponent } from './components/octane/octane.component';
+ 
 
 
 const appRoutes: Routes = [
@@ -38,6 +42,18 @@ const appRoutes: Routes = [
   {
     path: 'customer',
     component:CustomerComponent
+  },
+  {
+    path:'products',
+    component:ProductsComponent
+  },
+  {
+    path:'archie',
+    component:ArchieComponent
+  },
+  {
+    path:'octane',
+    component:OctaneComponent
   }
 ]
 
@@ -50,7 +66,10 @@ const appRoutes: Routes = [
     CustomerComponent,
     ServiceComponent, 
     HomeComponent,
-    TranslatePipe
+    TranslatePipe,
+    ProductsComponent,
+    ArchieComponent,
+    OctaneComponent
   ],
   imports: [
     BrowserModule,

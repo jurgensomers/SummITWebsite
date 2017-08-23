@@ -37,7 +37,7 @@ export const LANG_RU_TRANS = {
     "home.services": "услуги",
     "home.jobs": "работы",
     "home.contact": "контакт",
-    "home.archie": "Archie",
+    'home.products': 'Продукты',
 
     "services.heading1": "Наши услуги?",
     "services.heading1Text1": "Наши услуги направлены на качество и удовлетворить потребности компаний, которые нуждаются в поддержке в их ИТ-отдела.",
@@ -53,6 +53,18 @@ export const LANG_RU_TRANS = {
     "services.heading4": "Знание домена",
     "services.heading4Text1": "Наши основные модели основаны на технологии Microsoft.",
     "services.heading4Text2": "Мы работаем так, особенно с среде .NET",
-    "services.presentationText":"Чтобы узнать больше о нас , скачать презентацию"
+    "services.presentationText":"Чтобы узнать больше о нас , скачать презентацию",
 
+    "products.heading1" : "Продукты",
+    "products.archie" : "Archie",
+    "products.archieContent": "Archie - это программный пакет, который позволяет компаниям и организациям осваивать свои данные",
+    "products.octane" : "Octane",
+    "products.octaneContent": "Octane - это библиотека .NET, которая позволяет разработчикам быстро создавать приложения с использованием стандартных шаблонов и инструментов",
+    "products.discoverArchie" : "Обнаружить Archie",
+    "products.discoverOctane" : "Обнаружить Octane",
+
+     
+    "archie.pageTitle" : "Archie",
+
+    "octane.pageTitle" : "Octane"
 }

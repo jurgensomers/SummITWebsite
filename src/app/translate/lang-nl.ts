@@ -36,7 +36,7 @@ export const LANG_NL_TRANS = {
     "home.services": "Diensten",
     "home.jobs": "Jobs",
     "home.contact": "Contact",
-    "home.archie": "Archie",
+    'home.products': 'Producten',
 
     "services.heading1": "Onze diensten?",
     "services.heading1Text1": "Onze diensten zijn gericht op kwaliteit en dekken the noden van ondernemingen die steun nodig hebben in hun IT-afdeling.",
@@ -52,6 +52,18 @@ export const LANG_NL_TRANS = {
     "services.heading4": "Kennis domein",
     "services.heading4Text1": "Onze belangrijkste uitvoeringen zijn gebaseerd op technologieën van Microsoft.",
     "services.heading4Text2": "Wij werken dus vooral met de .NET omgeving",
-    "services.presentationText": "Om meer over ons te weten te komen, download de presentatie"
+    "services.presentationText": "Om meer over ons te weten te komen, download de presentatie",
 
+    "products.heading1" : "Producten",
+    "products.archie" : "Archie",
+    "products.archieContent": "Archie is een software pakket dat toelaat aan bedrijven en organisaties om beter hun data te beheren",
+    "products.octane" : "Octane",
+    "products.octaneContent": "Octane is een .NET bibliotheek dat ontwikkelaars toelaat om snel nieuwe toepassingen te creëren, gebaseerd op standaard patronen",
+    "products.discoverArchie" : "Ontdek Archie",
+    "products.discoverOctane" : "Ontdek Octane",
+
+    
+    "archie.pageTitle" : "Archie",
+
+    "octane.pageTitle" : "Octane"
 }

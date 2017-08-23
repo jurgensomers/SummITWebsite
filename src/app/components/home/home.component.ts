@@ -19,6 +19,7 @@ export class HomeComponent implements OnInit {
   stateCustomers:string='small';
   stateJobs:string='small';
   stateContact:string='small';
+  stateProduct:string='small';
 
   constructor(  ) { }
 
@@ -33,6 +34,7 @@ export class HomeComponent implements OnInit {
       case 'customers': this.stateCustomers = ( this.stateCustomers==='small' ? 'large' : 'small' );break;
       case 'jobs': this.stateJobs = ( this.stateJobs==='small' ? 'large' : 'small' );break;
       case 'contact':this.stateContact = ( this.stateContact==='small' ? 'large' : 'small' ); break;
+      case 'product':this.stateProduct = ( this.stateProduct==='small' ? 'large' : 'small' ); break;
     }
   
   }

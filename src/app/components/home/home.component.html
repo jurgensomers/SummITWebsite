@@ -1,6 +1,6 @@
 <div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8 jumbotron">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 jumbotron">
         <h1 style="text-align:center" translate="home.welcome">   
             {{ 'home.welcome' | translate }}   <br />    
             <img  src="./assets/images/logo.png"/>
@@ -10,8 +10,8 @@
         </h6>
     </div>
 </div>
-    <div class="row">
-    <div class="col-sm-2"></div>
+<div class="row">
+    <div class="col-sm-1"></div>
     <div class="col-sm-2">
         <div class="panel panel-main">
             <div class="panel-heading"><h3 style="text-align:center">
@@ -64,17 +64,17 @@
             </div>
         </div>
     </div>
-   <!-- <div class="col-sm-2">
+    <div class="col-sm-2">
         <div class="panel panel-main">
             <div class="panel-heading"><h3 style="text-align:center">
-                    {{ 'home.archie' | translate }}</h3></div>
+                    {{ 'home.products' | translate }}</h3></div>
             <div class="panel-body ">
                 <h1 style="text-align:center">
-                    <a href="/contact" style="text-align:center">
-                        <img src="./assets/images/archie.png" style="text-align:center" width="128" height="128"/>
+                    <a routerLink="/products" routerLinkActive="active" style="text-align:center">
+                        <img [@grow]='stateProduct' (mouseover)="animate('product')" (mouseleave)="animate('product')" src="./assets/images/product.png" style="text-align:center" width="128" height="128"/>
                     </a>
                 </h1>
             </div>
         </div>
-    </div>-->
+    </div>
 </div>
