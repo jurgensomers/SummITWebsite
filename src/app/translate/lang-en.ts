@@ -63,6 +63,7 @@ export const LANG_EN_TRANS = {
     "products.discoverOctane" : "Discover Octane",
 
     "archie.pageTitle" : "Archie",
+    "archie.titleContent" : "Archie is an application for administration and management of small and medium sized companies",
 
     "octane.pageTitle" : "Octane",
     "octane.introduction" : "Octane is a .NET library that provides base functionalities to build applications",
@@ -76,5 +77,5 @@ export const LANG_EN_TRANS = {
     "octane.specification" : "Specification pattern",
     "octane.test" : "Unit testing",
     "octane.validation" : "Validation",
-    "octance.wpf" : "WPF"
+    "octane.wpf" : "WPF"
 }

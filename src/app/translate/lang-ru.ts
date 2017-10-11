@@ -65,6 +65,19 @@ export const LANG_RU_TRANS = {
 
      
     "archie.pageTitle" : "Archie",
+    "archie.titleContent" : "Archie - приложение для администрирования и управления малыми и средними компаниями",
 
-    "octane.pageTitle" : "Octane"
+    "octane.pageTitle" : "Octane",
+    "octane.introduction" : "Octane - это библиотека .NET, которая предоставляет базовые функции для создания приложений",
+    "octane.data" : "Data",
+    "octane.data.content" : "Пакет данных содержит базовые функции для доступа к данным.",
+    "octane.di" : "Dependency injection",
+    "octane.localization" : "Localization",
+    "octane.mvvm" : "Model-View-Viewmodel",
+    "octane.service" : "WCF service",
+    "octane.serviceAgent" : "Service agents",
+    "octane.specification" : "Specification pattern",
+    "octane.test" : "Unit testing",
+    "octane.validation" : "Validation",
+    "octane.wpf" : "WPF"
 }

@@ -64,6 +64,7 @@ export const LANG_NL_TRANS = {
 
     
     "archie.pageTitle" : "Archie",
+    "archie.titleContent" : "Archie is een toepassing voor het beheer van de administratie voor kleine en middelgrote bedrijven",
 
     "octane.pageTitle" : "Octane",
     "octane.introduction" : "Octane is een .NET bibliotheek dat basis functionaliteiten voorziet om applicaties te ontwikkelen",
@@ -77,5 +78,5 @@ export const LANG_NL_TRANS = {
     "octane.specification" : "Specification pattern",
     "octane.test" : "Unit testen",
     "octane.validation" : "Validatie",
-    "octance.wpf" : "WPF"
+    "octane.wpf" : "WPF"
 }
